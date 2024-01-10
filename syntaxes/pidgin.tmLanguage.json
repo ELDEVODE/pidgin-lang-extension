@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Pidgin",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.pidgin",
+				"match": "\\b(if|while|for|return|normal|make_we_sabi|no_touch_this|yarn|oya shake_body|oya_call|create|check|track_my_guys_here)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.pidgin",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pidgin",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "input.pj"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "pidgin-lang-extension",
+  "displayName": "pidgin-lang-extension",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pidgin",
+      "aliases": ["Pidgin", "pidgin"],
+      "extensions": [".pj"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pidgin",
+      "scopeName": "input.pj",
+      "path": "./syntaxes/pidgin.tmLanguage.json"
+    }]
+  }
+}
